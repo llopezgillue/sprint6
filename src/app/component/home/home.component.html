@@ -1,0 +1,21 @@
+<div class="container" *ngIf="welcomePage">
+  <div class="start-page">
+
+
+    <p class="titleMessage">
+      Benvingut al sprint 6 <br><br>
+      Fes click a començar:
+    </p>
+
+
+    <div class="button-container">
+      <button class="startButton" type="button" (click)="start()">
+        començar
+      </button>
+    </div>
+
+  </div>
+
+</div>
+
+<app-escena *ngIf="!welcomePage" [stories]="stories" [actualPage]="actualPage"></app-escena>
